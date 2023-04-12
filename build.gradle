@@ -25,6 +25,10 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+bootRun {
+    systemProperty 'server.port', '8081'
+}
+
 test {
     useJUnitPlatform()
 }
